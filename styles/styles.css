@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#hero {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 7rem;
+}
+
+.header {
+  justify-content: space-evenly;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.411)),
+    url("/images/vema gym.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.animated {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.animated::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.animated:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo {
+  width: 150px;
+}
+
+a:hover {
+  text-shadow: 2px 2px 6px #999;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo:hover {
+  filter: brightness(85%);
+  transition: all 0.5s ease-in-out;
+}
+
+.info {
+  font-size: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+  padding: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+
+.content-main {
+  display: flex;
+  width: 100%; /* Make sure the content takes up the full width of .main */
+}
+
+.container3 {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  padding: 5rem;
+  flex: 1; /* Text takes up half the space */
+  /* Add some padding for spacing */
+}
+
+.container3 h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-bottom: 3rem;
+  text-align: left;
+}
+.container3 p {
+  font-size: 1.1rem;
+  padding-bottom: 4rem;
+}
+
+.button {
+  width: 200px;
+  background-color: #111827;
+  border: 1px solid transparent;
+  border-radius: 0.75rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: 0.75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6b7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: 0.5s;
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  background-color: #374151;
+  border-color: white;
+}
+
+.button:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button {
+    padding: 0.75rem 1.5rem;
+  }
+}
+#containerMember {
+  height: 80%;
+}
+
+.membership {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.background {
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.411)),
+    url("/images/background2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+  gap: 12px;
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; */
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 5rem;
+  background-color: #374151;
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgb(255, 255, 255);
+}
+
+/* .second {
+  gap: 0px;
+  display: flex;
+  justify-content: space-around;
+} */
+
+.container4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  padding: 5rem;
+}
+.BMI {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.table {
+  color: white;
+  border-collapse: collapse;
+  opacity: 0.8;
+  text-align: center;
+  height: 100%;
+  background-color: rgb(114, 3, 3);
+}
+
+.table tr,
+td {
+  border: 1px solid;
+  border-color: black;
+}
+
+.BMI-text {
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.inputField {
+  padding: 5px;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+}
+.image-container {
+  flex: 1; /* Image takes up half the space */
+  /* Add some padding for spacing */
+  max-width: 50%; /* Set a maximum width for the image container */
+  display: flex;
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image fits within the container */
+  height: auto; /* Maintain the image's aspect ratio */
+}
+
+.container .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container .info {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  width: 100%;
+  height: 60%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0)),
+    url("/images/image1.jfif") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer .logo {
+  width: 300px;
+}
+
+.hovereff :hover {
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+.footer .content {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.footer .social {
+  padding-bottom: 10px;
+  gap: 30px;
+}
+
+.footer .contact {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-bottom {
+  margin-top: -3px;
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 2rem;
+}
+
+#bmi {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 1234px) {
+  .BMI {
+  }
+
+  .container4 {
+    align-items: center;
+    width: 100%;
+  }
+  .table {
+    table-layout: fixed;
+    width: 480px;
+    height: 290px;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card1 {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.bmi-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 1038px) {
+  .content-main {
+    flex-direction: column;
+  }
+  .image-container {
+    max-width: 100%;
+  }
+
+  .BMI-text {
+    align-items: center;
+  }
+
+  .BMI {
+    flex-direction: column;
+  }
+
+  .container4 {
+    padding: 2rem;
+  }
+
+  .inputField {
+    width: 100px;
+    height: 50px;
+  }
+
+  .bmi-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+
+  .container3 {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .table {
+    height: 200px;
+    width: 300px;
+  }
+  .bmi-input-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+  }
+}
+
+/* NEXT  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */

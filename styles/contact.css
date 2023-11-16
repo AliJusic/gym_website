@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("/images/background2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+}
+
+.header {
+  justify-content: space-evenly;
+  background-color: black;
+  width: 100%;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.411)),
+    url("/images/vema gym.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.animated {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.animated::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.animated:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo {
+  width: 150px;
+}
+
+a:hover {
+  text-shadow: 2px 2px 6px #999;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo:hover {
+  filter: brightness(85%);
+  transition: all 0.5s ease-in-out;
+}
+
+.info {
+  font-size: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+}

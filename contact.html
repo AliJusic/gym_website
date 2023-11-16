@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FMH.FC</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              cyan: "#0891b2",
+              custom: "#374151"
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="antialiased bg-gray-100">
+    <div class="nav">
+      <a href="index.html" class="logo"
+        ><img class="logo" src="/images/logo22.png"
+      /></a>
+      <div class="navbar">
+        <a class="animated" href="index.html">Home</a>
+        <a class="animated" href="#">Membership</a>
+        <a class="animated" href="#">About</a>
+        <a class="animated" href="contact.html">Contact</a>
+      </div>
+    </div>
+    <div class="flex full min-h-full justify-center items-center">
+      <div
+        class="flex flex-col md:flex-row md:space-x-6 space-y-6 md:justify-between md:space-y-0 bg-custom w-full max-w-4xl p-8 rounded-xl shadow-lg text-white"
+          >
+        <div class="flex flex-col space-y-8 justify-between">
+          <div>
+            <h1 class="font-bold text-4xl tracking-wide md:text-4xl">Contact us</h1>
+            <p class="pt-2 text-gray-100 text-sm">
+              Lorem ipsum dolorem jedfkaj jalksdfj
+            </p>
+          </div>
+          <div class="flex flex-col space-y-4 md:text-lg">
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon size="large" name="call"></ion-icon>
+              <span>+387 61 123 456</span>
+            </div>
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon size="large" name="mail"></ion-icon>
+              <span>fhmfc@info.ba</span>
+            </div>
+            <div class="inline-flex space-x-2 items-center">
+              <ion-icon size="large" name="location""></ion-icon>
+              <span>Shopping and Hotel center Vema</span>
+            </div>
+          </div>
+          <div class="flex space-x-4 text-lg ">
+            <a href="#"><ion-icon size="large" name="logo-instagram"></ion-icon></a>
+            
+            <a href="#"> <ion-icon size="large" name="logo-google-playstore"></ion-icon></a>
+        
+            <a href="#">
+              <ion-icon size="large" name="logo-apple-appstore"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div >
+          <div class="bg-white rounded-xl shadow-lg p-8 text-black md:w-80">
+            <form action="" class="flex flex-col space-y-4">
+              <div>
+                <label for="" class="text-sm">Your name</label>
+              
+                <input type="text" placeholder="Your name" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]">
+              </div>
+              <div>
+                <label for="" class="text-sm">Email Adress</label>
+                <input type="email" placeholder="Email Adress" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]">
+              </div>
+              <div>
+                <label for="" class="text-sm">Message</label>
+                <textarea placeholder="Message" rows="4" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]"></textarea>
+              </div>
+              <button class="inline-block self-end bg-custom text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
