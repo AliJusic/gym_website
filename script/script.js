@@ -1,9 +1,9 @@
 console.log(bmi);
 
-var bmiButton = document.getElementById("BMIButton");
+const bmiButton = document.getElementById("BMIButton");
 const weightInput = document.getElementById("weight");
 const heightInput = document.getElementById("height");
-var text = document.getElementById("bmi");
+const text = document.getElementById("bmi");
 
 let height, weight, BMI;
 bmiButton.addEventListener("click", function () {

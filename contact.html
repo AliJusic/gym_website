@@ -27,8 +27,8 @@
       /></a>
       <div class="navbar">
         <a class="animated" href="index.html">Home</a>
-        <a class="animated" href="#">Membership</a>
-        <a class="animated" href="#">About</a>
+        <a class="animated" href="index.html">Membership</a>
+        <a class="animated" href="index.html">About</a>
         <a class="animated" href="contact.html">Contact</a>
       </div>
     </div>
@@ -68,22 +68,24 @@
           </div>
         </div>
         <div >
-          <div class="bg-white rounded-xl shadow-lg p-8 text-black md:w-80">
-            <form action="" class="flex flex-col space-y-4">
-              <div>
-                <label for="" class="text-sm">Your name</label>
-              
-                <input type="text" placeholder="Your name" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]">
+          <div class="bg-white rounded-xl shadow-lg p-8 text-black md:w-80 contactbox">
+            <form action="#" class="flex flex-col space-y-4 justify-center h-full">
+              <div class="field">
+                <label  for="" class="text-sm" >Your name</label>
+                <input id="name" type="text" placeholder="Your name"  class="item ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]">
+                <div class="error-txt name item">Name can`t be blank</div>
               </div>
-              <div>
-                <label for="" class="text-sm">Email Adress</label>
-                <input type="email" placeholder="Email Adress" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]">
+              <div class="field">
+                <label  for="" class="text-sm">Email Adress</label>
+                <input id="email" type="email" placeholder="Email Adress"  class="item ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]">
+                <div class="error-txt email item">Email can`t be blank</div>
               </div>
-              <div>
-                <label for="" class="text-sm">Message</label>
-                <textarea placeholder="Message" rows="4" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]"></textarea>
+              <div class="field">
+                <label  for="" class="text-sm">Message</label>
+                <textarea id="message" placeholder="Message" rows="4" class="item ring-1 ring-gray-300 w-full rounded-md px-4 py-2 outline-none focus:ring-2 focus:ring-custom-300 mt-2]"></textarea>
+                <div class="error-txt item message">Message can`t be blank</div>
               </div>
-              <button class="inline-block self-end bg-custom text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
+              <button type="submit" class="item inline-block self-end bg-custom text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">Send Message</button>
             </form>
           </div>
         </div>
@@ -100,5 +102,8 @@
       nomodule
       src="https://cdn.jsdelivr.net/npm/ionicons/dist/ionicons/ionicons.js"
     ></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script/script2.js"></script>
   </body>
 </html>

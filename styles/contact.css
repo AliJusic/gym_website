@@ -56,6 +56,7 @@ body {
 
 .logo {
   width: 150px;
+  margin-left: 1rem;
 }
 
 a:hover {
@@ -78,3 +79,26 @@ a:hover {
   align-items: center;
   margin-bottom: 3rem;
 }
+
+.error-txt {
+  color: red;
+  text-align: left;
+  margin: 5px 0px -10px;
+  display: none;
+}
+
+.contactbox {
+  height: 460px;
+}
+
+.field.error .item {
+  --tw-ring-color: red;
+}
+
+.field.error .error-txt {
+  display: block;
+}
+
+/* .default .item {
+  --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
+} */
