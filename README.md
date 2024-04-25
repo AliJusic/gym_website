@@ -1,12 +1,12 @@
 # Gym website
 This project is simple website for local gym meant to provide information about gym, its services, location and it has BMI calculator for visitors to estimate their BMI based on their height and weight.
 
-[gym1](gym1.png)
-[gym2](gym2.png)
-[gym3](gym3.png)
-[gym4](gym4.png)
-[gym5](gym5.png)
-[gym6](gym6.png)
+![gym1](gym1.png)
+![gym2](gym2.png)
+![gym3](gym3.png)
+![gym4](gym4.png)
+![gym5](gym5.png)
+![gym6](gym6.png)
 
 ## Technologies Used
 
